@@ -29,5 +29,21 @@ return searchResults;
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() !=obj.getClass()) return false;
+        Library library = (Library) obj;
+        return books.equals(library.books);
+
     }
+
+    public String toString() {
+
+        return String.format("%s",books);
     }
+
+    public ArrayList<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(ArrayList<Book> books) {
+        this.books = books;
+    }
+}

@@ -60,7 +60,7 @@ public class Book {
     }
 
     public String toString() {
-        return String.format("%-30s:%s%-30s:%s%-30s:%f%-30s:%s%-30s%s","Title",title,"Author",author,"Price",price,"Publisher",publisher,"ISBN",isbn );
+        return String.format("%-29s:%s%-30s:%s%-30s:%.2f$%-30s:%s%-30s:%s","Title",title,"\nAuthor",author,"\nPrice",price,"\nPublisher",publisher,"\nISBN",isbn );
     }
     public boolean equals(Book object) {
         if (this == object) {
